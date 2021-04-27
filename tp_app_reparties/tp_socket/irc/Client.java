@@ -80,6 +80,6 @@ public class Client {
     }
 
     public static void main(String args[]) {
-        Client client = new Client("20.50.2.28", 443);
+        Client client = new Client("localhost", 5000);
     }
 }
