@@ -10,6 +10,7 @@ class server extends Thread {
 
             in = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
         } catch (IOException e) {
+e.printStackTrace();
         }
 
     }
@@ -20,6 +21,7 @@ class server extends Thread {
                 System.out.println(in.readUTF());
             }
         } catch (Exception e) {
+        e.printStackTrace();
 
         }
 
@@ -35,7 +37,7 @@ class reader_client extends Thread {
                 //sends the input from the user's stdin to the server
                 Client.out.writeUTF(line);
             } catch (Exception e) {
-                ;
+                e.printStackTrace();;
             }
         }
     }
@@ -72,12 +74,12 @@ public class Client {
                 // socket.close();
 
 
-            } catch (Exception e) {}
+            } catch (Exception e) {e.printStackTrace();}
 
         }
     }
 
     public static void main(String args[]) {
-        Client client = new Client("127.0.0.1", 5000);
+        Client client = new Client("20.50.2.28", 443);
     }
 }
