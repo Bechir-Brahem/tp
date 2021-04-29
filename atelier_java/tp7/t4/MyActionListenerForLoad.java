@@ -15,7 +15,7 @@ public class MyActionListenerForLoad implements ActionListener {
             f.search.setText("invalid input");
             return;
         }
-        m passwd = new m(f);
+        M passwd = new M(f);
         passwd.run();
         boolean x = false;
         for (int i = 0; i < passwd.fichier.length; i++) {

@@ -1,9 +1,9 @@
 import java.io.*;
 import java.util.*;
-public class m {
+public class M {
     String [][]fichier;
     MyFrameAWT f = null;
-    public m(MyFrameAWT f) {
+    public M(MyFrameAWT f) {
         this.f = f;
     }
     public void run() {

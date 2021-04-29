@@ -10,7 +10,7 @@ public class MyActionListenerForSearch implements ActionListener {
 
         System.out.println("Bouton serach actionné");
         String s = f.search.getText();
-        m passwd = new m(f);
+        M passwd = new M(f);
         passwd.run();
         for (int i = 0; i < passwd.fichier.length; i++) {
             if (passwd.fichier[i][0].equals(s)) {
